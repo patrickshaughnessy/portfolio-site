@@ -3,7 +3,7 @@ import React from "react";
 class AppController extends React.Component {
   render() {
     return (
-      <div>
+      <div className="outer">
         <div className="backgroundImage"></div>
         <nav className="navbar navbar-default">
           <div className="container-fluid">
@@ -37,7 +37,6 @@ class AppController extends React.Component {
                 </li>
               </ul>
             </div>
-
           </div>
         </nav>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -48,6 +47,29 @@ class AppController extends React.Component {
             <li><a target="_blank" href="https://www.linkedin.com/pub/patrick-shaughnessy/14/2b1/77"><i className="fa fa-lg fa-linkedin"></i></a></li>
             <li><a target="_blank" href="http://stackoverflow.com/users/5294685/patrick-shaughnessy"><i className="fa fa-lg fa-stack-overflow"></i></a></li>
           </ul>
+        </div>
+
+        <div className="jumbotron">
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12 col-sm-8 col-md-6 greetingArea">
+                  <h1>Hi!</h1>
+                  <h2>
+                    I'm Patrick.
+                  </h2>
+                  <h3>
+                    I make things with javascript.
+                  </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-8 col-md-6 text-center">
+              <a role="button" className="btn learnMore">Learn More <span className="caret"></span></a>
+            </div>
+          </div>
         </div>
       </div>
     );
