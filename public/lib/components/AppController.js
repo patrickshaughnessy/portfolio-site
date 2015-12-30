@@ -10,9 +10,7 @@ class AppController extends React.Component {
             <div className="navbar-header">
               <button type="button" className="navbar-toggle float-left collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
+                <i className="fa fa-bars"></i>
               </button>
               <button type="button" className="navbar-toggle float-right collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
@@ -22,11 +20,11 @@ class AppController extends React.Component {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
-                <li className="active"><a href="/">Home <span className="sr-only">(current)</span></a></li>
+                <li><a href="/">Home <span className="sr-only">(current)</span></a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
               </ul>
-              <ul className="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-right hidden-xs">
                 <li className="dropdown">
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect <span className="caret"></span></a>
                   <ul className="dropdown-menu social">
