@@ -11,7 +11,10 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "glob": "^6.0.3",
+    "marked": "^0.3.5",
     "morgan": "~1.6.1",
+    "path": "^0.12.7",
     "serve-favicon": "~2.3.0"
   },
   "jspm": {
@@ -19,6 +22,10 @@
       "baseURL": "public"
     },
     "dependencies": {
+      "events": "github:jspm/nodelibs-events@^0.1.1",
+      "flux": "npm:flux@^2.1.1",
+      "jquery": "github:components/jquery@^2.1.4",
+      "marked": "npm:marked@^0.3.5",
       "react": "npm:react@^0.14.3",
       "react-dom": "npm:react-dom@^0.14.3"
     },
