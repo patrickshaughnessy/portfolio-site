@@ -48,7 +48,7 @@ class Blog extends React.Component {
             <div className="col-xs-12 col-sm-8 col-md-8 blogArea">
               {posts}
             </div>
-            <div className="col-md-4 sidebar">
+            <div className="col-md-3 hidden-xs hidden-sm sidebar">
               <p>This is the sidebar</p>
             </div>
           </div>
