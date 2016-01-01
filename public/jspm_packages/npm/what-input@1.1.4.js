@@ -1,0 +1,1 @@
+module.exports = require("npm:what-input@1.1.4/what-input.js");
