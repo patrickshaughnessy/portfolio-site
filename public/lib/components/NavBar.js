@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router";
 
 class NavBar extends React.Component {
 
@@ -24,9 +25,9 @@ class NavBar extends React.Component {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
-                <li><a href="#home" onClick={this.renderView.bind(this, 'home')}>Home <span className="sr-only">(current)</span></a></li>
-                <li><a href="#portfolio" onClick={this.renderView.bind(this, 'portfolio')}>Portfolio</a></li>
-                <li><a href="#blog" onClick={this.renderView.bind(this, 'blog')}>Blog</a></li>
+                <li><Link to="/">Home <span className="sr-only">(current)</span></Link></li>
+                <li><Link to="portfolio">Portfolio</Link></li>
+                <li><Link to="blog">Blog</Link></li>
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
                 <li className="dropdown">

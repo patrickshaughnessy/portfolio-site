@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import Blog from './components/Blog';
 
-import { Router, Route, Link } from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 import AppController from "./components/AppController";
 
 ReactDOM.render((
-  <Router>
+  <Router history={browserHistory}>
     <Route path="/" component={AppController}>
+      <IndexRoute component={Home} />
       <Route path="portfolio" component={Portfolio} />
       <Route path="blog" component={Blog} />
     </Route>

@@ -7,23 +7,23 @@ import ViewController from "./ViewController";
 
 
 class AppController extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      view: 'blog'
-    };
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     view: 'home'
+  //   };
+  // }
 
-  renderView(view){
-    this.setState({view: view});
-  }
+  // renderView(view){
+  //   this.setState({view: view});
+  // }
 
   render() {
     return (
       <div className="outer">
         <div className="backgroundImage"></div>
-        <NavBar renderView={this.renderView.bind(this)} />
-        <ViewController view={this.state.view} renderView={this.renderView.bind(this)} />
+        <NavBar />
+        {this.props.children}
       </div>
     );
   }

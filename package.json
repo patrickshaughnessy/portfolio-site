@@ -27,7 +27,8 @@
       "jquery": "github:components/jquery@^2.1.4",
       "marked": "npm:marked@^0.3.5",
       "react": "npm:react@^0.14.3",
-      "react-dom": "npm:react-dom@^0.14.3"
+      "react-dom": "npm:react-dom@^0.14.3",
+      "react-router": "npm:react-router@^2.0.0-rc4"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
