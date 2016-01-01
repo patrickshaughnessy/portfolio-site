@@ -10,13 +10,7 @@ glob.sync('./data/posts/*.md').forEach(function(file) {
 });
 
 router.get('/api/posts', function(req, res, next) {
-  res.jsonp({posts: posts})
+  res.jsonp({posts: posts});
 });
-
-router.get('*', function (request, response){
-  console.log(__dirname);
-  response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-})
-
 
 module.exports = router;
