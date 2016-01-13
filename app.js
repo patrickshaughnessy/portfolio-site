@@ -4,10 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-var routes = require('./routes/index');
+var mongoose = require('mongoose');
 
 var app = express();
+
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/portfolio-site');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', require('./routes/index'));
 app.get('*', function (request, response){
   response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })

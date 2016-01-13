@@ -1,12 +1,13 @@
 import React from "react";
 import PostActions from "../actions/PostActions";
 import PostStore from "../stores/PostStore";
+// import um from '../../../util/userManagement';
 
 let _getAppState = () => {
   return { posts: PostStore.getAllPosts() }
 }
 
-class Blog extends React.Component {
+class Admin extends React.Component {
   constructor(props) {
     super(props);
     this.state = _getAppState();
@@ -23,31 +24,14 @@ class Blog extends React.Component {
     this.setState(_getAppState());
   }
 
-  rawMarkup(post){
-    return { __html: post };
-  }
-
   render() {
-
-    let posts = this.state.posts.map((post, i) => {
-      return <span key={i} dangerouslySetInnerHTML={this.rawMarkup(post)}></span>
-    })
-
+    console.log(um);
     return (
       <div>
-        <div className="container">
-          <div className="row outercontainer">
-            <div className="col-xs-12 col-sm-8 col-md-8 blogArea">
-              {posts}
-            </div>
-            <div className="col-sm-4 col-md-4 hidden-xs sidebar">
-              <p>This is the sidebar</p>
-            </div>
-          </div>
-        </div>
+        <h1>This is the admin page</h1>
       </div>
     );
   }
 }
 
-export default Blog;
+export default Admin;

@@ -12,7 +12,6 @@ class PostStore extends EventEmitter {
     AppDispatcher.register(action => {
       switch (action.actionType) {
         case ActionTypes.RECEIVE_POSTS:
-          console.log("4. We received news about the new data", action);
           // account for the new data;
           _posts = action.posts;
           this.emit("CHANGE");

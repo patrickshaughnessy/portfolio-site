@@ -1,11 +1,7 @@
 import React from "react";
+import {Link} from 'react-router';
 
 class Home extends React.Component {
-
-  renderView(view, e){
-    this.props.renderView(view);
-  }
-
   render() {
     return (
       <div>
@@ -27,7 +23,7 @@ class Home extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-8 col-md-6 text-center">
-              <a role="button" className="btn learnMore" onClick={this.renderView.bind(this, 'portfolio')}>Portfolio <span className="caret"></span></a>
+              <Link role="button" className="btn learnMore" to="portfolio">Portfolio <span className="caret"></span></Link>
             </div>
           </div>
         </div>

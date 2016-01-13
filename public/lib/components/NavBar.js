@@ -9,11 +9,11 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="navArea">
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle float-left collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" className="navbar-toggle float-left collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
                 <i className="fa fa-bars"></i>
               </button>
@@ -25,9 +25,9 @@ class NavBar extends React.Component {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
-                <li><Link to="/">Home <span className="sr-only">(current)</span></Link></li>
-                <li><Link to="portfolio">Portfolio</Link></li>
-                <li><Link to="blog">Blog</Link></li>
+                <li data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in"><Link to="/">Home <span className="sr-only">(current)</span></Link></li>
+                <li data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in"><Link to="portfolio">Portfolio</Link></li>
+                <li data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in"><Link to="blog">Blog</Link></li>
               </ul>
               <ul className="nav navbar-nav navbar-right hidden-xs">
                 <li className="dropdown">
