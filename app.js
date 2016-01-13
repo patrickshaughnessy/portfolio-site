@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/portfolio-site');
+// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/portfolio-site');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
